@@ -14,13 +14,15 @@ const { header } = Astro.props
       class="accordion__header"
       aria-expanded="false"
       aria-controls="accordion-panel-1"
-      onclick="toggleAccordionItem()"
+      onclick="
+      toggleAccordionItem()
+"
     >
       {header}
-      <svg class="header__toggle-indicator" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__toggle-indicator" viewBox="0 0 16 16">
         <path
-          fill="currentColor"
-          d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
         ></path>
       </svg>
     </button>
